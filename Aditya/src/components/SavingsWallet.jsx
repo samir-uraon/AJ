@@ -1,16 +1,24 @@
 import React from "react";
 import "./styles/SavingsWallet.css"
+import { NavLink } from "react-router-dom";
+
 export default function SavingsWallet() {
   return (
     <section className="savings-wallet">
-      <div className="savings-card">
-        <h3>Gold Savings Plan</h3>
-        <p>Deposit monthly for 11 months & get gold at average rate + bonus.</p>
-      </div>
-      <div className="wallet-card">
-        <h3>Customer Wallet</h3>
-        <p>Store residual payments and use them for future purchases.</p>
-      </div>
+      <NavLink to="/shop-details">
+        <div className="savings-card" id="shop-details">
+          <h3>Shop Details</h3>
+          <p>This is the shop to collect your gold.
+          (Click here for more details)
+          </p>
+        </div>
+      </NavLink>
+      <NavLink to="/customer-history">
+        <div className="wallet-card" id="customer-history">
+          <h3>Customer History</h3>
+          <p>  Here you can view your gold balance and transaction history.</p>
+        </div>
+      </NavLink>
     </section>
   );
 }

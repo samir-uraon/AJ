@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./styles/Hero.css"
 
 export default function Hero() {
@@ -6,8 +7,8 @@ export default function Hero() {
     <section className="hero" id="hero">
       <div className="hero-text">
         <h1>Aditya Jewellers</h1>
-        <p>Secure. Transparent. Luxurious Gold Investments at Your Fingertips.</p>
-        <button className="primary-btn">Buy Now</button>
+        <p>Secure | Transparent | Luxurious Gold Investments at Your Fingertips.</p>
+      <NavLink to="/Buy-Gold"><button className="primary-btn">Buy Now</button></NavLink>
       </div>
     </section>
   );

@@ -1,41 +1,34 @@
 import React from "react";
-import { useEffect } from "react";
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Features from "./components/Features.jsx";
-import GoldRates from "./components/GoldRates.jsx";
-import Purchase from "./components/Purchase.jsx";
-import SavingsWallet from "./components/SavingsWallet.jsx";
-import AdminDashboardSection from "./components/AdminDashboardSection.jsx";
-import Footer from "./components/Footer.jsx";
- 
+import RouterPage from "./RouterPage.jsx"
+import ErrorPage from "./components/ErrorPage.jsx"
+import ShopDetails from "./components/ShopDetails.jsx"
+import BuyGold from "./components/BuyGold.jsx"
 
+import { createBrowserRouter ,RouterProvider} from "react-router-dom";
 
 export default function App() {
 
+ 
+  
 
-  useEffect(()=>{
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RouterPage />,
+  },
+    {
+    path: "/shop-details",
+    element: <ShopDetails />,
+  },
+    {
+    path: "/buy-gold",
+    element: <BuyGold />,
+  },
+    {
+    path: "/*",
+    element: <ErrorPage />,
+  },
+]);
 
-if (navigator.geolocation && !localStorage.getItem("location")) {
-  navigator.geolocation.getCurrentPosition(
-    (position) => {
-      const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
-    }
-  );
-} 
-
-},[])
-
-  return (
-    <div className="website-container">
-      <Navbar/>
-      <Hero />
-      <GoldRates />
-      <Purchase />
-      <SavingsWallet />
-      <Features />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
