@@ -192,12 +192,13 @@ export default function ShopDetails({
           <div>⏰ {hours}</div>
         </div>
 
-        <div style={card}>
+      <a href="https://maps.app.goo.gl/MKVF9d7RKQxrsSec7?g_st=aw" target="_blank" id="vist">  <div style={card}>
           <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 6 }}>
             Visit Us
           </div>
-          <a href="https://maps.app.goo.gl/MKVF9d7RKQxrsSec7?g_st=aw" target="_blank" id="vist"><div>📍 {address}</div></a>
-        </div>
+          <div> <span>📍 {address}</span></div>
+        </div></a>
+
       </div>
 
       <p style={{ marginTop: 16, ...small }}>
