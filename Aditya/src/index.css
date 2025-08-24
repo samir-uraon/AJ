@@ -13,7 +13,7 @@ html {
   transition: all 0.2s ease;
   &:hover {
     color:rgb(235, 193, 120);
-    text-decoration: underline;
+   
   }
 }
 #shop-details{

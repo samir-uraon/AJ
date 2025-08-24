@@ -196,7 +196,7 @@ export default function ShopDetails({
           <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 6 }}>
             Visit Us
           </div>
-          <div>📍 <a href="https://maps.app.goo.gl/MKVF9d7RKQxrsSec7?g_st=aw" target="_blank" id="vist">{address}</a></div>
+          <a href="https://maps.app.goo.gl/MKVF9d7RKQxrsSec7?g_st=aw" target="_blank" id="vist"><div>📍 {address}</div></a>
         </div>
       </div>
 
