@@ -23,7 +23,7 @@ const [loading, setloading] = useState(true);
 		
 
 
-		const BASE_URL = `http://${import.meta.env.VITE_host}:${import.meta.env.VITE_port2}`;
+		const BASE_URL = `${import.meta.env.VITE_backend_url}`;
 
 		useEffect(() => {
 	
