@@ -1,0 +1,16 @@
+.savings-wallet {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.savings-card, .wallet-card {
+  background: white;
+  border: 1px solid #f5deb3;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

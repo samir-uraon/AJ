@@ -1,0 +1,24 @@
+.gold-rates {
+  padding: 50px 20px;
+ 
+  text-align: center;
+}
+
+.gold-rates h2 {
+  color: #b8860b;
+  margin-bottom: 20px;
+}
+
+.rates-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rate-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #d4af37;
+  width: 150px;
+}
