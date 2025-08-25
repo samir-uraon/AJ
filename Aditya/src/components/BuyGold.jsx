@@ -28,9 +28,7 @@ export default function BuyGold() {
 		});
 		
 
-
-		const API_KEY = "92f9b44b0a99e485edce6176b7a69e41"; // **Replace with your actual API key**
-		const BASE_URL = "http://localhost:3000";
+const BASE_URL = `${import.meta.env.VITE_backend_url}`;
 
 		useEffect(() => {
 	
